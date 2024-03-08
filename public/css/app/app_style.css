@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  list-style: none;
+}
+:root {
+  --corPrimaria: #333333;
+  --corSecundaria: #ea5252;
+}
+html {
+  font-family: "Roboto", sans-serif !important;
+}
+a {
+  color: var(--corSecundaria);
+}
+a:hover {
+  color: var(--corPrimaria);
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Lexend Mega', sans-serif;
+}  
+h3 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  color: var(--corPrimaria);
+}
+
+header {
+  background: var(--corPrimaria);
+}
+.nav-link {
+  font-weight: 500;
+  color: #fff !important;
+  text-transform: capitalize;
+}
+.nav-link:hover {
+  color: var(--corSecundaria) !important;
+}
+.banner-home{
+  height: 71vh;  
+}
+
+.fundoPrimario {
+  background-color: var(--corPrimaria);
+  color: #fff;
+}
+.fundoSecundario {
+  background-color: var(--corSecundaria);
+  color: #fff;
+}
+.fundoSecundario:hover {
+  background-color: var(--corPrimaria);
+}
+label {
+  color: var(--corPrimaria);
+  font-size: 0.8em;
+}
+
+.sideBar {
+  padding: 30px;
+  background: var(--corPrimaria);
+  min-height : 100%;
+}
+.sideBar a {
+  text-transform: capitalize;
+  display: block;
+  line-height: 40px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid var(--corSecundaria);
+  padding: 5px;
+}
+.sideBar a:hover {
+  background: var(--corSecundaria);
+  border-radius: 0 0 10px 10px;
+}
+
+.sideBar p {
+  color: rgba(255, 255, 255, 0.7);
+}
+.sideBar h4 {
+  position: relative;
+  padding: 10px 0 15px;
+  color: #fff;
+  border-bottom: 1px solid rgba(234, 82, 82, 0.3);
+}
+.sideBar img {
+  max-height: 300px;
+  max-width: 300px;
+  margin: 10px auto;
+  display: block;
+}
+.sideBar ul {
+  padding: 0;
+}
+.redesSociais {
+  text-align: center;
+}
+.redesSociais li {
+  display: inline-block;
+}
+.redesSociais li a {
+  height: 30px;
+  width: 30px;
+  background: rgba(130, 139, 178, 0.3);
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  padding: 0;
+}
+.redesSociais li a:hover {
+  border-radius: 0;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid var(--corSecundaria);
+}
+
+.logo {
+  max-width: 120px;
+  //background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  //border-radius: 10px;
+}
+
+.zoom {
+  overflow: hidden;
+}
+.zoom img {
+  transition: transform 0.5s ease;
+}
+.zoom:hover img {
+  transform: scale(1.2);
+}
+.postTopo i {
+  margin-left: 10px;
+}
+
+.postResumo {
+  margin-bottom: 40px;
+}
+.postTexto {
+  background: #fff;
+  position: relative;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.3);
+  box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.3);
+  padding: 20px;
+}
+.posts h2 {
+  font-size: 2em;
+  line-height: 30px;
+  padding-right: 20px;
+  margin-bottom: 25px;
+  -webkit-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+}
+.posts p {
+  line-height: 24px;
+  color: #777777;
+  margin-bottom: 22px;
+}
+.posts small {
+  color: #999;
+}
+.postImagem img {
+  width: 100%;
+  height: 280px;
+  max-height: 360px;
+}
+
+.postSemCapa {
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.3);
+  box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.3);
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+footer {
+  background: var(--corPrimaria);
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: var(--corSecundaria);
+}
+footer h5 {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0 35px 0;
+}
+footer i {
+  color: rgb(255, 228, 196);
+}
+address {
+  font-size: 0.9em;
+}
+
+.textoAnimado {
+  font-size: 4em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    var(--corPrimaria),
+    var(--corSecundaria)
+  );
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+.admin i {
+  color: rgba(255, 255, 255, 0.3);
+}
+@media (max-width: 768px)
+{
+.banner-home{ height : 45vh;}
+}
+
+.pagination li {
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.pagination ul {
+  list-style-type: none;
+}
