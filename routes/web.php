@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::get('/', 'App\Http\Controllers\SiteHomeController@index')->name('site.home');
 Route::get('/contato', 'App\Http\Controllers\SiteContactController@index')->name('site.contact');
-Route::post('/enviar-mensagem', 'App\Http\Controllers\SiteMessageController@store')->name('site.message');
+Route::post('/enviar-mensagem', 'App\Http\Controllers\SiteContactController@store')->name('site.message');
 
 Auth::routes();
 
