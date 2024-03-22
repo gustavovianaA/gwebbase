@@ -37,7 +37,7 @@
 </head>
 
 <body>
-
+    
     @yield('content')
 
     <!-- JavaScript Libraries -->
