@@ -10,7 +10,7 @@
 <p>Formulário de contato</p>
 <div class="row">
     <div class="col-md-6">
-        @component('site.layouts._components.form_send_message' , ['responseMessage' => $responseMessage])
+        @component('site.layouts._components.form_send_message')
         @endcomponent
     </div>
 </div>

@@ -4,15 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Message;
+use App\Rules\ReCaptchaV3;
 
 class SiteContactController extends Controller
 {
     public function index()
     {
-        //if there is response for message sent them show it
-        $responseMessage = $_GET['responseMessage'] ?? '';
-
-        return view('site.contact', ['page' => 'contact', 'responseMessage' => $responseMessage]);
+        return view('site.contact', ['page' => 'contact']);
     }
 
     /**
@@ -28,6 +26,7 @@ class SiteContactController extends Controller
             'telephone' => 'required',
             'email' => 'required',
             'message' => 'required',
+            'g-recaptcha-response' => ['required', new ReCaptchaV3('submitContact')]
         ];
 
         $feedback = [
@@ -40,7 +39,9 @@ class SiteContactController extends Controller
 
         Message::create($requestData);
 
-        return redirect()->route('site.contact', ['responseMessage' => 'Obrigado! Sua mensagem foi enviada.']);
+        //return redirect()->route('site.contact', ['responseMessage' => 'Obrigado! Sua mensagem foi enviada.']);
+
+        return redirect()->back()->with('responseMessage', 'Obrigado! Sua mensagem foi enviada.');
 
     }
 }
