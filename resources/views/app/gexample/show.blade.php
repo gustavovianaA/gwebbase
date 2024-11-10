@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h2>Marca: {{ $gexample->title }}</h2>
+    <h2>Título: {{ $gexample->title }}</h2>
 </div>
 @include('app.gexample._partials.menu')
 

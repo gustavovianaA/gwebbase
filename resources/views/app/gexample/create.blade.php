@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h2>Adicionar Marca</h2>
+    <h2>Adicionar GExemplo</h2>
 </div>
 @include('app.gexample._partials.menu')
 

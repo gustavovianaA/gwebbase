@@ -32,6 +32,17 @@ class UserFactory extends Factory
         ];
     }
 
+    public function webmaster()
+    {
+        return $this->state([
+            'name' => 'Webmaster',
+            'email' => 'webmaster@test.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('password'),
+            'remember_token' => Str::random(10),
+        ]);
+    }
+
     /**
      * Indicate that the model's email address should be unverified.
      */

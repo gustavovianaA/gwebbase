@@ -134,9 +134,9 @@
         </div>
 
         @if (isset($gexample->id))
-        <input type="submit" value="Salvar Veículo" class="btn  btn-primary btn-block" data-toggle="tooltip" title="Salvar Veículo">
+        <input type="submit" value="Salvar GExemplo" class="btn  btn-primary btn-block" data-toggle="tooltip" title="Salvar Veículo">
         @else
-        <input type="submit" value="Cadastrar Veículo" class="btn btn-primary btn-block" data-toggle="tooltip" title="Cadastrar Veículo">
+        <input type="submit" value="Cadastrar GExemplo" class="btn btn-primary btn-block" data-toggle="tooltip" title="Cadastrar Veículo">
         @endif
 
     </form>
